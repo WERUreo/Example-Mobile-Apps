@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15A279b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="mN3-PY-MIv">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Section_02_Exercise_01" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Red" translatesAutoresizingMaskIntoConstraints="NO" id="8Fe-zR-ovJ">
+                                <rect key="frame" x="20" y="72" width="160" height="160"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="160" id="4Ik-NI-KyH"/>
+                                    <constraint firstAttribute="width" constant="160" id="MNO-nk-2kK"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F1F-ku-yXM">
+                                <rect key="frame" x="246" y="285" width="109" height="30"/>
+                                <state key="normal" title="Hide Blue Circle"/>
+                                <connections>
+                                    <action selector="hideBlueCircle:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hMs-qz-eZJ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vuQ-Y4-ujE">
+                                <rect key="frame" x="247" y="323" width="106" height="30"/>
+                                <state key="normal" title="Hide Red Circle"/>
+                                <connections>
+                                    <action selector="hideRedCircle:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zKc-0k-gQL"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Blue" translatesAutoresizingMaskIntoConstraints="NO" id="51j-lz-2JQ">
+                                <rect key="frame" x="420" y="72" width="160" height="160"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="160" id="9qi-2d-cnR"/>
+                                    <constraint firstAttribute="width" constant="160" id="YXM-mG-XuG"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="vuQ-Y4-ujE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Hvg-gY-6j9"/>
+                            <constraint firstItem="F1F-ku-yXM" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="MWc-DT-wtF"/>
+                            <constraint firstItem="8Fe-zR-ovJ" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="Qjb-2f-X2g"/>
+                            <constraint firstItem="vuQ-Y4-ujE" firstAttribute="top" secondItem="F1F-ku-yXM" secondAttribute="bottom" constant="8" id="TWI-xa-ljp"/>
+                            <constraint firstItem="51j-lz-2JQ" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="Ung-3U-PLG"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="8Fe-zR-ovJ" secondAttribute="leading" id="Xga-ax-gOl"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="51j-lz-2JQ" secondAttribute="trailing" id="erj-2c-tEZ"/>
+                            <constraint firstItem="F1F-ku-yXM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="zFN-GV-n7Z"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="liW-oZ-Wf6"/>
+                    <connections>
+                        <outlet property="blueCircle" destination="51j-lz-2JQ" id="bt3-Dv-AzU"/>
+                        <outlet property="hideBlueCircleButton" destination="F1F-ku-yXM" id="1uS-Hb-Vwg"/>
+                        <outlet property="hideRedCircleButton" destination="vuQ-Y4-ujE" id="RC8-Ry-Ckx"/>
+                        <outlet property="redCircle" destination="8Fe-zR-ovJ" id="ONY-ax-rmW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1507" y="446"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="ak1-oe-rQk">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="mN3-PY-MIv" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="H9C-0T-g28">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="B1z-Mu-QLW"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MNr-4C-Xi8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="646" y="1106"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Blue" width="160" height="160"/>
+        <image name="Red" width="160" height="160"/>
+    </resources>
+</document>
