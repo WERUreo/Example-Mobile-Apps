@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "D6A3FFC6E259A47558DCB017CCFA32104F040C19",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "D6A3FFC6E259A47558DCB017CCFA32104F040C19" : 0,
+    "21C95552CEF25C94378F59DF928BC78635B7FE01" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "79DBD206-C780-4E11-97C9-6569F70FCB9D",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "D6A3FFC6E259A47558DCB017CCFA32104F040C19" : "Stormy-iOS-exercise\/",
+    "21C95552CEF25C94378F59DF928BC78635B7FE01" : ".."
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "Stormy",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Stormy.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/WERUreo\/Example-Mobile-Apps.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "21C95552CEF25C94378F59DF928BC78635B7FE01"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/WERUreo\/Stormy_iOS.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "D6A3FFC6E259A47558DCB017CCFA32104F040C19"
+    }
+  ]
+}
