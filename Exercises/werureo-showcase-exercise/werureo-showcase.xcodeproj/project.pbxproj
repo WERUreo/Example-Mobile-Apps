@@ -1,0 +1,481 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		42B608301C96D712003F229F /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42B6082F1C96D712003F229F /* DataService.swift */; };
+		42B608321C96F534003F229F /* FeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42B608311C96F534003F229F /* FeedVC.swift */; };
+		42B608341C96F5BD003F229F /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42B608331C96F5BD003F229F /* PostCell.swift */; };
+		42B608361C973657003F229F /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42B608351C973657003F229F /* Post.swift */; };
+		42B6084B1C97BA86003F229F /* APIKeys.plist in Resources */ = {isa = PBXBuildFile; fileRef = 42B6084A1C97BA86003F229F /* APIKeys.plist */; };
+		42C149971C96520400812F80 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42C149961C96520400812F80 /* AppDelegate.swift */; };
+		42C149991C96520400812F80 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42C149981C96520400812F80 /* ViewController.swift */; };
+		42C1499C1C96520400812F80 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42C1499A1C96520400812F80 /* Main.storyboard */; };
+		42C1499E1C96520400812F80 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 42C1499D1C96520400812F80 /* Assets.xcassets */; };
+		42C149A11C96520400812F80 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42C1499F1C96520400812F80 /* LaunchScreen.storyboard */; };
+		42C149B01C96531200812F80 /* NotoSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 42C149AC1C96531200812F80 /* NotoSans-Bold.ttf */; };
+		42C149B11C96531200812F80 /* NotoSans-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 42C149AD1C96531200812F80 /* NotoSans-BoldItalic.ttf */; };
+		42C149B21C96531200812F80 /* NotoSans-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 42C149AE1C96531200812F80 /* NotoSans-Italic.ttf */; };
+		42C149B31C96531200812F80 /* NotoSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 42C149AF1C96531200812F80 /* NotoSans-Regular.ttf */; };
+		42C149B51C96558500812F80 /* MaterialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42C149B41C96558500812F80 /* MaterialView.swift */; };
+		42C149B81C9655CE00812F80 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42C149B71C9655CE00812F80 /* Constants.swift */; };
+		42C149BA1C96590000812F80 /* MaterialButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42C149B91C96590000812F80 /* MaterialButton.swift */; };
+		42C149BC1C965B2800812F80 /* MaterialTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42C149BB1C965B2800812F80 /* MaterialTextField.swift */; };
+		4B3D74441739009D1BD07198 /* Pods_werureo_showcase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27F4E0C9F51E506D240CC46D /* Pods_werureo_showcase.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		27F4E0C9F51E506D240CC46D /* Pods_werureo_showcase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_werureo_showcase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F0769A9CC65916AE9B1D5FB /* Pods-werureo-showcase.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-werureo-showcase.release.xcconfig"; path = "Pods/Target Support Files/Pods-werureo-showcase/Pods-werureo-showcase.release.xcconfig"; sourceTree = "<group>"; };
+		40D9DE34A271D56572E86705 /* Pods-werureo-showcase.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-werureo-showcase.debug.xcconfig"; path = "Pods/Target Support Files/Pods-werureo-showcase/Pods-werureo-showcase.debug.xcconfig"; sourceTree = "<group>"; };
+		42B6082F1C96D712003F229F /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
+		42B608311C96F534003F229F /* FeedVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedVC.swift; sourceTree = "<group>"; };
+		42B608331C96F5BD003F229F /* PostCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
+		42B608351C973657003F229F /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		42B6084A1C97BA86003F229F /* APIKeys.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = APIKeys.plist; sourceTree = "<group>"; };
+		42C149931C96520400812F80 /* werureo-showcase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "werureo-showcase.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		42C149961C96520400812F80 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		42C149981C96520400812F80 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		42C1499B1C96520400812F80 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		42C1499D1C96520400812F80 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		42C149A01C96520400812F80 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		42C149A21C96520400812F80 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		42C149AC1C96531200812F80 /* NotoSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSans-Bold.ttf"; sourceTree = "<group>"; };
+		42C149AD1C96531200812F80 /* NotoSans-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSans-BoldItalic.ttf"; sourceTree = "<group>"; };
+		42C149AE1C96531200812F80 /* NotoSans-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSans-Italic.ttf"; sourceTree = "<group>"; };
+		42C149AF1C96531200812F80 /* NotoSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSans-Regular.ttf"; sourceTree = "<group>"; };
+		42C149B41C96558500812F80 /* MaterialView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterialView.swift; sourceTree = "<group>"; };
+		42C149B71C9655CE00812F80 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		42C149B91C96590000812F80 /* MaterialButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterialButton.swift; sourceTree = "<group>"; };
+		42C149BB1C965B2800812F80 /* MaterialTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterialTextField.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		42C149901C96520400812F80 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B3D74441739009D1BD07198 /* Pods_werureo_showcase.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		42B6082E1C96D703003F229F /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				42B6082F1C96D712003F229F /* DataService.swift */,
+			);
+			name = Services;
+			sourceTree = "<group>";
+		};
+		42C1498A1C96520400812F80 = {
+			isa = PBXGroup;
+			children = (
+				42C149951C96520400812F80 /* werureo-showcase */,
+				42C149941C96520400812F80 /* Products */,
+				AC11413BEFF88DF8EE89FF62 /* Pods */,
+				A3468A55D9836B2E8D63B07B /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		42C149941C96520400812F80 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				42C149931C96520400812F80 /* werureo-showcase.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		42C149951C96520400812F80 /* werureo-showcase */ = {
+			isa = PBXGroup;
+			children = (
+				42B6082E1C96D703003F229F /* Services */,
+				42C149B61C9655C100812F80 /* Util */,
+				42C149AB1C96522B00812F80 /* Resources */,
+				42C149AA1C96522600812F80 /* Model */,
+				42C149A91C96521D00812F80 /* View */,
+				42C149A81C96521600812F80 /* Controller */,
+				42C149961C96520400812F80 /* AppDelegate.swift */,
+				42C1499A1C96520400812F80 /* Main.storyboard */,
+				42C1499D1C96520400812F80 /* Assets.xcassets */,
+				42C1499F1C96520400812F80 /* LaunchScreen.storyboard */,
+				42C149A21C96520400812F80 /* Info.plist */,
+				42B6084A1C97BA86003F229F /* APIKeys.plist */,
+			);
+			path = "werureo-showcase";
+			sourceTree = "<group>";
+		};
+		42C149A81C96521600812F80 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				42C149981C96520400812F80 /* ViewController.swift */,
+				42B608311C96F534003F229F /* FeedVC.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		42C149A91C96521D00812F80 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				42C149B41C96558500812F80 /* MaterialView.swift */,
+				42C149B91C96590000812F80 /* MaterialButton.swift */,
+				42C149BB1C965B2800812F80 /* MaterialTextField.swift */,
+				42B608331C96F5BD003F229F /* PostCell.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		42C149AA1C96522600812F80 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				42B608351C973657003F229F /* Post.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		42C149AB1C96522B00812F80 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				42C149AC1C96531200812F80 /* NotoSans-Bold.ttf */,
+				42C149AD1C96531200812F80 /* NotoSans-BoldItalic.ttf */,
+				42C149AE1C96531200812F80 /* NotoSans-Italic.ttf */,
+				42C149AF1C96531200812F80 /* NotoSans-Regular.ttf */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		42C149B61C9655C100812F80 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				42C149B71C9655CE00812F80 /* Constants.swift */,
+			);
+			name = Util;
+			sourceTree = "<group>";
+		};
+		A3468A55D9836B2E8D63B07B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				27F4E0C9F51E506D240CC46D /* Pods_werureo_showcase.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AC11413BEFF88DF8EE89FF62 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				40D9DE34A271D56572E86705 /* Pods-werureo-showcase.debug.xcconfig */,
+				3F0769A9CC65916AE9B1D5FB /* Pods-werureo-showcase.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		42C149921C96520400812F80 /* werureo-showcase */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 42C149A51C96520400812F80 /* Build configuration list for PBXNativeTarget "werureo-showcase" */;
+			buildPhases = (
+				E343B875F459A7B90D1FB9FD /* Check Pods Manifest.lock */,
+				42C1498F1C96520400812F80 /* Sources */,
+				42C149901C96520400812F80 /* Frameworks */,
+				42C149911C96520400812F80 /* Resources */,
+				6D4DF05ECF03C293B531AD91 /* Embed Pods Frameworks */,
+				BF3C8C238AF914F0D1D9F899 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "werureo-showcase";
+			productName = "werureo-showcase";
+			productReference = 42C149931C96520400812F80 /* werureo-showcase.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		42C1498B1C96520400812F80 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = WERUreo;
+				TargetAttributes = {
+					42C149921C96520400812F80 = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
+				};
+			};
+			buildConfigurationList = 42C1498E1C96520400812F80 /* Build configuration list for PBXProject "werureo-showcase" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 42C1498A1C96520400812F80;
+			productRefGroup = 42C149941C96520400812F80 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				42C149921C96520400812F80 /* werureo-showcase */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		42C149911C96520400812F80 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42C149B01C96531200812F80 /* NotoSans-Bold.ttf in Resources */,
+				42B6084B1C97BA86003F229F /* APIKeys.plist in Resources */,
+				42C149A11C96520400812F80 /* LaunchScreen.storyboard in Resources */,
+				42C149B11C96531200812F80 /* NotoSans-BoldItalic.ttf in Resources */,
+				42C149B21C96531200812F80 /* NotoSans-Italic.ttf in Resources */,
+				42C1499E1C96520400812F80 /* Assets.xcassets in Resources */,
+				42C1499C1C96520400812F80 /* Main.storyboard in Resources */,
+				42C149B31C96531200812F80 /* NotoSans-Regular.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6D4DF05ECF03C293B531AD91 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-werureo-showcase/Pods-werureo-showcase-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BF3C8C238AF914F0D1D9F899 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-werureo-showcase/Pods-werureo-showcase-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E343B875F459A7B90D1FB9FD /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		42C1498F1C96520400812F80 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42C149BC1C965B2800812F80 /* MaterialTextField.swift in Sources */,
+				42B608301C96D712003F229F /* DataService.swift in Sources */,
+				42C149B51C96558500812F80 /* MaterialView.swift in Sources */,
+				42C149991C96520400812F80 /* ViewController.swift in Sources */,
+				42B608321C96F534003F229F /* FeedVC.swift in Sources */,
+				42B608341C96F5BD003F229F /* PostCell.swift in Sources */,
+				42C149971C96520400812F80 /* AppDelegate.swift in Sources */,
+				42C149B81C9655CE00812F80 /* Constants.swift in Sources */,
+				42C149BA1C96590000812F80 /* MaterialButton.swift in Sources */,
+				42B608361C973657003F229F /* Post.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		42C1499A1C96520400812F80 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				42C1499B1C96520400812F80 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		42C1499F1C96520400812F80 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				42C149A01C96520400812F80 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		42C149A31C96520400812F80 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		42C149A41C96520400812F80 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		42C149A61C96520400812F80 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 40D9DE34A271D56572E86705 /* Pods-werureo-showcase.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/werureo-showcase",
+				);
+				INFOPLIST_FILE = "werureo-showcase/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.WERUreo.showcase;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		42C149A71C96520400812F80 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3F0769A9CC65916AE9B1D5FB /* Pods-werureo-showcase.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/werureo-showcase",
+				);
+				INFOPLIST_FILE = "werureo-showcase/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.WERUreo.showcase;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		42C1498E1C96520400812F80 /* Build configuration list for PBXProject "werureo-showcase" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				42C149A31C96520400812F80 /* Debug */,
+				42C149A41C96520400812F80 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		42C149A51C96520400812F80 /* Build configuration list for PBXNativeTarget "werureo-showcase" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				42C149A61C96520400812F80 /* Debug */,
+				42C149A71C96520400812F80 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 42C1498B1C96520400812F80 /* Project object */;
+}
