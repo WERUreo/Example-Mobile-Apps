@@ -1,0 +1,1 @@
+This playground demonstrates the solution to Lecture 34: Exercise - Arrays & Loops in Section 3 - Progressing with iOS: Arrays, Loops, Audio, & an Awesome App of Mark Price's Udemy course, iOS 9 and Swift 2: From Beginner to Paid Professional.
