@@ -9,6 +9,7 @@
 import UIKit
 import FBSDKCoreKit
 import FBSDKLoginKit
+import Firebase
 
 class ViewController: UIViewController
 {
@@ -38,7 +39,8 @@ class ViewController: UIViewController
     {
         let facebookLogin = FBSDKLoginManager()
 
-        facebookLogin.logInWithReadPermissions(["email"], fromViewController: self) { facebookResult, facebookError in
+        facebookLogin.logInWithReadPermissions(["email"], fromViewController: self)
+        { facebookResult, facebookError in
             if facebookError != nil
             {
                 print("Facebook login failed.  Error \(facebookError)")
@@ -46,18 +48,20 @@ class ViewController: UIViewController
             else
             {
                 let accessToken = FBSDKAccessToken.currentAccessToken().tokenString
+                let credential = FIRFacebookAuthProvider.credentialWithAccessToken(accessToken)
 
-                DataService.ds.REF_BASE.authWithOAuthProvider("facebook", token: accessToken) { error, authData in
+                FIRAuth.auth()?.signInWithCredential(credential)
+                { (user, error) in
                     if error != nil
                     {
                         print("Login failed. \(error)")
                     }
                     else
                     {
-                        let user = ["provider": authData.provider!, "blah": "test"]
-                        DataService.ds.createFirebaseUser(authData.uid, user: user)
+                        let userData = ["provider": credential.provider]
+                        DataService.ds.createFirebaseUser(user!.uid, user: userData)
 
-                        NSUserDefaults.standardUserDefaults().setValue(authData.uid, forKey: KEY_UID)
+                        NSUserDefaults.standardUserDefaults().setValue(user!.uid, forKey: KEY_UID)
                         self.performSegueWithIdentifier(SEGUE_LOGGED_IN, sender: nil)
                     }
                 }
@@ -72,26 +76,29 @@ class ViewController: UIViewController
         if let email = emailField.text where email != "",
             let pwd = passwordField.text where pwd != ""
         {
-            DataService.ds.REF_BASE.authUser(email, password: pwd, withCompletionBlock: { error, authData in
+            FIRAuth.auth()?.signInWithEmail(email, password: pwd)
+            { (user, error) in
                 if error != nil
                 {
-                    if error.code == STATUS_ACCOUNT_NONEXIST
+                    if error!.code == STATUS_ACCOUNT_NONEXIST
                     {
-                        DataService.ds.REF_BASE.createUser(email, password: pwd, withValueCompletionBlock: { error, result in
+                        FIRAuth.auth()?.createUserWithEmail(email, password: pwd)
+                        { (user, error) in
                             if error != nil
                             {
                                 self.showErrorAlert("Could not create account", msg: "Problem creating account. Try something else")
                             }
                             else
                             {
-                                NSUserDefaults.standardUserDefaults().setValue(result[KEY_UID], forKey: KEY_UID)
-                                DataService.ds.REF_BASE.authUser(email, password: pwd, withCompletionBlock: { error, authData in
-                                    let user = ["provider": authData.provider!, "blah":"emailtest"]
-                                    DataService.ds.createFirebaseUser(authData.uid, user: user)
-                                })
+                                NSUserDefaults.standardUserDefaults().setValue(user?.uid, forKey: KEY_UID)
+                                FIRAuth.auth()?.signInWithEmail(email, password: pwd)
+                                { (user, error) in
+                                    let userData = ["provider": email, "blah":"emailtest"]
+                                    DataService.ds.createFirebaseUser(user!.uid, user: userData)
+                                }
                                 self.performSegueWithIdentifier(SEGUE_LOGGED_IN, sender: nil)
                             }
-                        })
+                        }
                     }
                     else
                     {
@@ -102,7 +109,7 @@ class ViewController: UIViewController
                 {
                     self.performSegueWithIdentifier(SEGUE_LOGGED_IN, sender: nil)
                 }
-            })
+            }
         }
         else
         {

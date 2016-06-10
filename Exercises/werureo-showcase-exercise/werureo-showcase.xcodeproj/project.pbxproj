@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		423843B61D0A6CC000DAD85A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 423843B51D0A6CC000DAD85A /* GoogleService-Info.plist */; };
 		42B608301C96D712003F229F /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42B6082F1C96D712003F229F /* DataService.swift */; };
 		42B608321C96F534003F229F /* FeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42B608311C96F534003F229F /* FeedVC.swift */; };
 		42B608341C96F5BD003F229F /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42B608331C96F5BD003F229F /* PostCell.swift */; };
@@ -32,6 +33,7 @@
 		27F4E0C9F51E506D240CC46D /* Pods_werureo_showcase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_werureo_showcase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F0769A9CC65916AE9B1D5FB /* Pods-werureo-showcase.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-werureo-showcase.release.xcconfig"; path = "Pods/Target Support Files/Pods-werureo-showcase/Pods-werureo-showcase.release.xcconfig"; sourceTree = "<group>"; };
 		40D9DE34A271D56572E86705 /* Pods-werureo-showcase.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-werureo-showcase.debug.xcconfig"; path = "Pods/Target Support Files/Pods-werureo-showcase/Pods-werureo-showcase.debug.xcconfig"; sourceTree = "<group>"; };
+		423843B51D0A6CC000DAD85A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		42B6082F1C96D712003F229F /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		42B608311C96F534003F229F /* FeedVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedVC.swift; sourceTree = "<group>"; };
 		42B608331C96F5BD003F229F /* PostCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
@@ -106,6 +108,7 @@
 				42C1499D1C96520400812F80 /* Assets.xcassets */,
 				42C1499F1C96520400812F80 /* LaunchScreen.storyboard */,
 				42C149A21C96520400812F80 /* Info.plist */,
+				423843B51D0A6CC000DAD85A /* GoogleService-Info.plist */,
 				42B6084A1C97BA86003F229F /* APIKeys.plist */,
 			);
 			path = "werureo-showcase";
@@ -238,6 +241,7 @@
 			files = (
 				42C149B01C96531200812F80 /* NotoSans-Bold.ttf in Resources */,
 				42B6084B1C97BA86003F229F /* APIKeys.plist in Resources */,
+				423843B61D0A6CC000DAD85A /* GoogleService-Info.plist in Resources */,
 				42C149A11C96520400812F80 /* LaunchScreen.storyboard in Resources */,
 				42C149B11C96531200812F80 /* NotoSans-BoldItalic.ttf in Resources */,
 				42C149B21C96531200812F80 /* NotoSans-Italic.ttf in Resources */,
